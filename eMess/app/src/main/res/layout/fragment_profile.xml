@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="5dp"
+    tools:context="com.example.josimuddin.emess.fragments.ProfileFragment">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:src="@drawable/placeholder"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        android:padding="5dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_name_profile"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:background="@drawable/view_backgrount"
+            android:text="Display Name"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/view_backgrount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text="Self :"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_phone_self_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:text="01XXXXXXXXX" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/view_backgrount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text="Home:"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_phone_home_profile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:text="01XXXXXXXXX" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_email_profile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:background="@drawable/view_backgrount"
+        android:text="Email@gmail.com" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/view_backgrount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:text="Present :"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_present_address_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:layout_weight="4"
+            android:text="House#04, Road#16, Sector: 10, Uttara, Dhaka - 1230" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/view_backgrount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:text="Permanent:"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_permanent_address_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            android:layout_weight="4"
+            android:text="Vill: KadomTala, Post: Chala, P.S: Harirampur, Dis: Manikgonj" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="1"
+        android:background="@drawable/view_backgrount"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:text="Connected Mess :"
+        android:gravity="center"
+        />
+        <TextView
+            android:id="@+id/tv_connectedmess_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="PookersPoint" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="2">
+        <Button
+            android:id="@+id/btn_update_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:text="Update Profile" />
+    </LinearLayout>
+
+</LinearLayout>

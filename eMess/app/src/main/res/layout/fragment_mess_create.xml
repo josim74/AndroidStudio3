@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.josimuddin.emess.fragments.MessCreateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Only one mess you will be able to be connected. if you create mess, automatically you will be connected to your mess. So you will no be able to create mess if you have already connected to a mess." />
+
+    <EditText
+        android:textCursorDrawable="@null"
+        android:id="@+id/et_mess_name_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="textPersonName"
+        android:hint="mess name"/>
+    <Button
+        android:id="@+id/btn_create_mess_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Create Mess" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_artist_main"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="Artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_trac_name_main"
+        android:layout_below="@+id/tv_artist_main"
+        android:hint="Enter track name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:orientation="horizontal"
+        android:layout_below="@+id/et_trac_name_main"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spnner_generes"
+            android:entries="@array/genres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_add_artist_main"
+        android:layout_below="@+id/linear_layout"
+        android:text="add Artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_track_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_add_artist_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Track" />
+    <TextView
+        android:id="@+id/tv_description_main"
+        android:layout_below="@+id/tv_track_main"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lv_track_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_description_main"
+        android:layout_marginTop="33dp">
+    </ListView>
+</RelativeLayout>

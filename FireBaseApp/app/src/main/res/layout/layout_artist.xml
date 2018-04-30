@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_view_name_layout_artist"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atif Aslam" />
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/tv_view_gener_layout_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rock" />
+</LinearLayout>

@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josimuddin.emess.fragments.MealFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="19"
+        android:id="@+id/show_meal_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_date_meal_fragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Select Date"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark" />
+        <TextView
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.2"
+            android:text="Total Meal Till Now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/tv_total_meal_fragment"
+            android:layout_width="0dp"
+            android:text="00.0"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:text="Total Save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/tv_total_save_meal_fragment"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="00.0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:text="Total Cost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/tv_total_cost_meal_fragment"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="00.0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:text="Meal Rate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/tv_meal_rate_fragment"
+            android:layout_width="0dp"
+            android:text="00.0"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_thumbnails_members"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_height="64dp">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_display_name_members"
+            android:text="Display Name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/tv_phone_members"
+            android:text="01XXXXXXXXX"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_weight="2"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="0dp"
+    android:layout_height="64dp">
+
+    <Button
+        android:id="@+id/btn_minus_members"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:text="-"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_weight="0.8"
+        android:id="@+id/tv_meal_numbers"
+        android:text="2.5"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:padding="8dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_plus_members"
+        android:layout_weight="1"
+        android:text="+"
+        android:textStyle="bold"
+        android:layout_margin="0dp"
+        android:layout_width="0dp"
+        android:layout_height="54dp" />
+</LinearLayout>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>

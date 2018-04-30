@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.josimuddin.emess.ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/placeholder"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFFFF"/>
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:background="@drawable/view_backgrount"
+        android:id="@+id/tv_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textStyle="bold"
+        android:text="Display Name" />
+
+    <TextView
+        android:background="@drawable/view_backgrount"
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="abcd@demo.com" />
+    <LinearLayout
+        android:background="@drawable/view_backgrount"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbl_phone_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone(Self):"
+            android:layout_marginRight="8dp"/>
+        <TextView
+            android:id="@+id/tv_phone_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01XXXXXXXXX" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/view_backgrount"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbl_phone_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Phone(Home):" />
+        <TextView
+            android:id="@+id/tv_phone_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01XXXXXXXXX" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/view_backgrount"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbl_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Address:" />
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vill: KadomTola, P.O: Chala, P.S: Horirampur, Dis: Manikganj" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/view_backgrount"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbl_connected_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Connected Mess:" />
+
+        <TextView
+            android:id="@+id/tv_connected_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mess Name"
+            android:textColor="@android:color/holo_orange_dark" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_connection_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        android:textColor="@color/colorAccent"
+        android:text="You got connection request from the mess MESSNAME" />
+
+    <Button
+        android:id="@+id/btn_accept_or_remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/colorFocusedHighlight"
+        android:visibility="invisible"
+        android:text=""
+        android:textColor="@color/colorAccent" />
+</LinearLayout>

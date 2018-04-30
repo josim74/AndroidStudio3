@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <TextView
+        android:id="@+id/tv_shopping_date"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:text="xxxx-xx-xx"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_shopper_name"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:text="Name"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_daily_cost"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:text="XXXX"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</android.support.v7.widget.CardView>

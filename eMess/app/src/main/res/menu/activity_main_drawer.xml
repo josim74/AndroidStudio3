@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_Profile"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Profile" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_create_mess"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Create Mess"/>
+        <item
+            android:id="@+id/nav_mess_activity"
+            android:title="Mess Activity">
+                <menu>
+                   <group android:checkableBehavior="single">
+                       <item
+                           android:id="@+id/nav_meal"
+                           android:icon="@android:drawable/menu_frame"
+                           android:title="Meal" />
+                       <item
+                           android:id="@+id/nav_Bazar"
+                           android:icon="@android:drawable/menu_frame"
+                           android:title="Bazar" />
+                       <item
+                           android:id="@+id/nav_notice_board"
+                           android:icon="@android:drawable/ic_menu_my_calendar"
+                           android:title="Notice Board" />
+                   </group>
+                </menu>
+        </item>
+        <item
+            android:id="@+id/nav_manager_activity"
+            android:title="Manager Activity">
+                <menu>
+                    <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/nav_meal_input"
+                            android:icon="@android:drawable/ic_menu_upload"
+                            android:title="Meal Input" />
+                        <item
+                            android:id="@+id/nav_bazar_input"
+                            android:icon="@android:drawable/ic_menu_upload"
+                            android:title="Bazar Input" />
+                        <item
+                            android:id="@+id/nav_others_input"
+                            android:icon="@android:drawable/ic_menu_upload"
+                            android:title="Others Input" />
+                        <item
+                            android:id="@+id/nav_make_manager"
+                            android:icon="@android:drawable/ic_menu_my_calendar"
+                            android:title="Make Manager" />
+                        <item
+                            android:id="@+id/nav_add_new_member"
+                            android:icon="@android:drawable/ic_input_add"
+                            android:title="Add Member" />
+                        <item
+                            android:id="@+id/nav_settings"
+                            android:icon="@drawable/ic_menu_manage"
+                            android:title="Settings" />
+                    </group>
+                </menu>
+        </item>
+    <item
+        android:id="@+id/nav_billing_activity"
+        android:icon="@android:drawable/ic_partial_secure"
+        android:title="Billing Activity" />
+    <item
+        android:id="@+id/nav_others_activity"
+        android:title="Others Activity">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@android:drawable/ic_menu_sort_alphabetically"
+                    android:title="About" />
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@android:drawable/ic_menu_help"
+                    android:title="Help" />
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@android:drawable/btn_star_big_on"
+                    android:title="Give Us Feedback" />
+                <item
+                    android:id="@+id/nav_get_others_app"
+                    android:icon="@android:drawable/ic_menu_agenda"
+                    android:title="Get Others App" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@android:drawable/btn_dialog"
+                    android:title="LogOut" />
+            </group>
+        </menu>
+    </item>
+</menu>

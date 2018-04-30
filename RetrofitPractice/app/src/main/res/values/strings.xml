@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Retrofit Practice</string>
+    <string name="weather_api">6ef9e49c3159013eeca921e2a9ef45f7</string>
+</resources>

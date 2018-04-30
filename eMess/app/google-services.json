@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "601533279901",
+    "firebase_url": "https://emess-a6440.firebaseio.com",
+    "project_id": "emess-a6440",
+    "storage_bucket": "emess-a6440.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601533279901:android:2fd9423603947206",
+        "android_client_info": {
+          "package_name": "com.example.josimuddin.emess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601533279901-jng6f4njb9akihsc755hgubhm4aeeehs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.josimuddin.emess",
+            "certificate_hash": "0b237c5c0bd2be4ebf0189c95758217d91d74c5b"
+          }
+        },
+        {
+          "client_id": "601533279901-jcv2lb7rjj89jom7nb9m0pi80f1cegvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuEuqylJE0yBBc_DfpftD1_yp2pobWe-w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601533279901-jcv2lb7rjj89jom7nb9m0pi80f1cegvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

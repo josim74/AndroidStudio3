@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FireBaseApp</string>
+    <array name="genres">
+        <item name="rock">Rock</item>
+        <item name="pop">POP</item>
+        <item name="classic">Classic</item>
+        <item name="jazz">Jazz</item>
+        <item name="sufi">Sufi</item>
+        <item name="folk">Folk</item>
+        <item name="rap">RAP</item>
+    </array>
+</resources>
